@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="450.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar fx:id="menu" prefHeight="25.0" prefWidth="870.0" VBox.vgrow="NEVER">
+      <menus>
+            <Menu fx:id="records" mnemonicParsing="false" text="Records">
+              <items>
+                <MenuItem fx:id="viewRecord" mnemonicParsing="false" text="View all record" />
+              </items>
+            </Menu>
+            <Menu fx:id="profile" mnemonicParsing="false" text="Profile">
+              <items>
+                <MenuItem fx:id="viewProfile" mnemonicParsing="false" text="View my profile" />
+                <MenuItem fx:id="updateProfile" mnemonicParsing="false" text="Update my profile" />
+              </items>
+            </Menu>
+            <Menu fx:id="exportRecord" mnemonicParsing="false" text="Export">
+              <items>
+              	<MenuItem fx:id="exportRecord" mnemonicParsing="false" text="Export my records" />
+              </items>
+            </Menu>
+            <Menu fx:id="about" mnemonicParsing="false" text="About">
+              <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+            <Menu fx:id="account" mnemonicParsing="false" text="Account">
+              <items>
+              <MenuItem fx:id="logOut" mnemonicParsing="false" text="Log Out" />
+              </items>
+            </Menu>
+      </menus>
+    </MenuBar>
+      <GridPane style="-fx-background-color: #DCDCDC;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="welcomeMessage" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="187.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+  </children>
+</VBox>
